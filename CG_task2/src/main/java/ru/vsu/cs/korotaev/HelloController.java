@@ -233,7 +233,6 @@ public class HelloController {
         }
         line2.setSin(sin);
         line2.setCos(cos);
-        System.out.println(sin + "  " + cos);
     }
 
     public int[] connect(double grad1, double grad2, double koef1, double koef2) {

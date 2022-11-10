@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="CG_task2">
+    <output-path>$PROJECT_DIR$/out/artifacts/CG_task2</output-path>
+    <root id="root">
+      <element id="archive" name="CG_task2.jar">
+        <element id="module-output" name="CG_task2" />
+      </element>
+    </root>
+  </artifact>
+</component>
