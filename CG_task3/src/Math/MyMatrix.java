@@ -1,9 +1,9 @@
 package Math;
 
-public class Matrix {
+public class MyMatrix {
     private double[][] matrix;
 
-    public Matrix(double[][] matrix){
+    public MyMatrix(double[][] matrix){
         this.matrix = matrix;
     }
 
@@ -11,27 +11,27 @@ public class Matrix {
         return matrix;
     }
 
-    public Matrix transposeMatrix(){
+    public MyMatrix transposeMatrix(){
         double[][] m = new double[3][3];
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
                 m[j][i] = matrix[i][j];
             }
         }
-        return new Matrix(m);
+        return new MyMatrix(m);
     }
 
-    public static Matrix getZeroMatrix(int size) {
+    public static MyMatrix getZeroMatrix(int size) {
         double[][] m = new double[size][size];
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m[0].length; j++) {
                 m[i][j] = 0;
             }
         }
-        return new Matrix(m);
+        return new MyMatrix(m);
     }
 
-    public static Matrix getOneMatrix(int size){
+    public static MyMatrix getOneMatrix(int size){
         double[][] m = new double[size][size];
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m[0].length; j++) {
@@ -42,6 +42,6 @@ public class Matrix {
                 }
             }
         }
-        return new Matrix(m);
+        return new MyMatrix(m);
     }
 }
